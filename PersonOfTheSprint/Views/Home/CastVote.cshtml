@@ -1,0 +1,13 @@
+﻿@model PersonOfTheSprint.ViewModels.TeamMemberAndVoteViewModel
+
+@{
+    ViewBag.Title = "Vote Cast";
+}
+
+<h2>Vote Cast</h2>
+
+<div>
+    You voted for: @Model.Vote.NominatedTeamMember.FirstName and the reason(s) you gave were:
+    <div>@Model.Vote.Reason</div>
+    @Model.Vote.NominatedTeamMember.FirstName has been voted for @ViewBag.numberOfTimesVotedFor time(s)
+</div>

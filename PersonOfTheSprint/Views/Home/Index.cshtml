@@ -1,0 +1,23 @@
+﻿@model PersonOfTheSprint.ViewModels.TeamMemberAndVoteViewModel
+
+@{
+    ViewBag.Title = "Vote";
+}
+
+@{
+    if (Model.Sprint != null)
+    {
+        <h1>Sprint: @Model.Sprint.SprintNumber</h1>
+    }
+}
+
+<h3>Please cast your vote</h3>
+
+@using (Html.BeginForm("CastVote", "Home", FormMethod.Post))
+{
+    @Html.DropDownListFor(x => x.Vote.NominatedTeamMember.Id, Model.TeamMembersSelectList, "Please select a team member")
+    @Html.Label("Reason you have nominated your chosen team member: ")
+    @Html.TextBoxFor(x => x.Vote.Reason, string.Empty, new { @class = "textBox" })
+
+    <input type="submit" value="Cast Vote"/>
+}

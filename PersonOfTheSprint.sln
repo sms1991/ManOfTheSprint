@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonOfTheSprint", "PersonOfTheSprint\PersonOfTheSprint.csproj", "{8F8E251B-FF4B-4919-8610-CD017F35A967}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonOfTheSprint.Tests", "PersonOfTheSprint.Tests\PersonOfTheSprint.Tests.csproj", "{4994DFB7-29DB-44F9-8754-E64CBA275B3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F8E251B-FF4B-4919-8610-CD017F35A967}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F8E251B-FF4B-4919-8610-CD017F35A967}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F8E251B-FF4B-4919-8610-CD017F35A967}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F8E251B-FF4B-4919-8610-CD017F35A967}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4994DFB7-29DB-44F9-8754-E64CBA275B3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4994DFB7-29DB-44F9-8754-E64CBA275B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4994DFB7-29DB-44F9-8754-E64CBA275B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4994DFB7-29DB-44F9-8754-E64CBA275B3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://martpendle.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = PersonOfTheSprint\\PersonOfTheSprint.csproj
+		SccProjectName1 = PersonOfTheSprint
+		SccLocalPath1 = PersonOfTheSprint
+		SccProjectUniqueName2 = PersonOfTheSprint.Tests\\PersonOfTheSprint.Tests.csproj
+		SccProjectName2 = PersonOfTheSprint.Tests
+		SccLocalPath2 = PersonOfTheSprint.Tests
+	EndGlobalSection
+EndGlobal
