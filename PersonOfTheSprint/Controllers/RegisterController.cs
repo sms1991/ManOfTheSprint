@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Linq;
 using System.Web.Mvc;
 using PersonOfTheSprint.Models;
 using PersonOfTheSprint.ViewModels;
@@ -23,14 +20,6 @@ namespace PersonOfTheSprint.Controllers
         {
             if (!ModelState.IsValid) return View("Index");
 
-           //var c =  CheckEmailAvailability(user.Email);
-
-            //if (CheckEmailAvailability(user.Email))
-            //{
-            //    //ModelState.AddModelError("", "This email address has already been taken.");
-            //   // return View("Index", user);
-            //}
-
             user.Password = HashThePassword(user.Password);
 
             var newUser = new User
@@ -49,19 +38,6 @@ namespace PersonOfTheSprint.Controllers
         {
            return  BCrypt.Net.BCrypt.HashPassword(password, 4);
         }
-
-        //[HttpPost]
-        //public bool CheckEmailAvailability(string email)
-        //{
-        //    var currentEmailAddresses = _context.Users.FirstOrDefault(x => x.Email == email);
-
-        //    if (currentEmailAddresses != null)
-        //    {
-        //        return String.Equals(email, currentEmailAddresses.Email, StringComparison.OrdinalIgnoreCase);
-        //    }
-
-        //    return false;
-        //}
 
         [HttpPost]
         public JsonResult CheckEmailAvailability(string email)
